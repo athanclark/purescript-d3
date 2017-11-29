@@ -5,4 +5,4 @@ var d3 = require('d3');
 
 // module Graphics.D3.Time
 
-exports.timeScale = d3.time.scale;
+exports.timeScale = d3.scaleTime;
