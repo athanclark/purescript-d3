@@ -5,20 +5,20 @@ var d3 = require('d3');
 
 // module Graphics.D3.Scale
 
-exports.linearScale = d3.scale.linear;
+exports.linearScale = d3.scaleLinear;
 
-exports.powerScale = d3.scale.pow;
+exports.powerScale = d3.scalePow;
 
-exports.sqrtScale = d3.scale.sqrt;
+exports.sqrtScale = d3.scaleSqrt;
 
 exports.logScale = function() {
     return d3.scale.log();
 };
 
-exports.quantizeScale = d3.scale.quantize;
+exports.quantizeScale = d3.scaleQuantize;
 
-exports.quantileScale = d3.scale.quantile;
+exports.quantileScale = d3.scaleQuantile;
 
-exports.thresholdScale = d3.scale.threshold;
+exports.thresholdScale = d3.scaleThreshold;
 
-exports.ordinalScale = d3.scale.ordinal;
+exports.ordinalScale = d3.scaleOrdinal;
