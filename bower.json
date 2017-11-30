@@ -16,7 +16,8 @@
     "d3": "^3.4.9",
     "purescript-foreign": "^4.0.1",
     "purescript-easy-ffi": "^2.1.2",
-    "purescript-js-date": "^5.1.0"
+    "purescript-js-date": "^5.1.0",
+    "purescript-nullable": "^3.0.0"
   },
   "private": false
 }

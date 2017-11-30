@@ -63,11 +63,11 @@ class Scale s where
 class Quantitative s where
   invert :: s Number Number -> D3Eff (Number -> Number)
   rangeRound :: Array Number -> s Number Number -> D3Eff (s Number Number)
-  interpolate :: forall d r. Interpolator r -> s d r -> D3Eff (s d r)
-  clamp :: forall d r. Boolean -> s d r -> D3Eff (s d r)
-  nice :: forall d r. Maybe Number -> s d r -> D3Eff (s d r)
-  getTicks :: forall d r. Maybe Number -> s d r -> D3Eff (Array d)
-  getTickFormat :: forall d r. Number -> Maybe String -> s d r -> D3Eff (d -> String)
+  interpolate :: forall r. Interpolator r -> s Number r -> D3Eff (s Number r)
+  clamp :: forall r. Boolean -> s Number r -> D3Eff (s Number r)
+  nice :: forall r. Maybe Number -> s Number r -> D3Eff (s Number r)
+  getTicks :: forall r. Maybe Number -> s Number r -> D3Eff (Array Number)
+  getTickFormat :: forall r. Number -> Maybe String -> s Number r -> D3Eff (Number -> String)
 
 -- Scale types
 
